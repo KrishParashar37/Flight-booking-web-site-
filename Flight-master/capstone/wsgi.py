@@ -8,6 +8,10 @@ https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/
 """
 
 import os
+import sys
+
+# Add the directory containing 'capstone' to the Python path
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 from django.core.wsgi import get_wsgi_application
 
